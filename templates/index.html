@@ -109,8 +109,7 @@
             const content = $('#image-description').val()
 
 
-            if (!title) alert('You forgot to fill the title')
-            else if (!content) alert('You forgot to fill the description')
+            if (!title || !content || !profImage) alert('Please fill the entire field!')
             else {
                 const form_data = new FormData()
                 form_data.append('file', file)
@@ -134,7 +133,6 @@
         }
     </script>
 
-    <!-- <img src="../static/images/archLinuxWallpaper.png" class="rounded-circle profile-image" alt="profile image" /> -->
 </body>
 
 </html>
